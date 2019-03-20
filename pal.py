@@ -13,6 +13,7 @@ def cat_dog(str):
                 dog_count += 1
 
     return dog_count == cat_count
+#Test using -> cat_dog("catdog")
 
 # Returns true if a list has a 2 adjacent to another 2
 def has22(ls):
@@ -26,6 +27,7 @@ def has22(ls):
                 continue
 
     return False
+#Test using -> hass22([1,2,2,3,2])
 
 # Returns true if the goal number of chocolates can be created using the combination of small and big
 def make_chocolate(small,big,goal):
@@ -37,6 +39,7 @@ def make_chocolate(small,big,goal):
             return need_kilos
         else:
             return -1
+#Test using -> make_chocolate(1,5,11)
 
 # Returns true if either b or c is within a distance of 1 from a while the other is greater then or equals 10
 def close_far(a,b,c):
@@ -52,6 +55,7 @@ def close_far(a,b,c):
 			return True
 		else:
 			return False
+# Test using -> close_far(1,2,10)
 
 # Returns true is the goal number of bricks can be created using the cobination of small and big bricks
 def make_bricks(small, big, goal):
@@ -79,6 +83,7 @@ def make_bricks(small, big, goal):
                 return True
             else:
                 return False
+# Test using -> make_bricks(1,1,7)
 
 # Returns repeated characters in a string
 def repeat_chars(n):
@@ -91,8 +96,9 @@ def repeat_chars(n):
     for key in dict:
         if dict[key] > 1:
             print(key)
+# Test using repeat_chars("Rafsan")
 
-# Returns a string with no repeated characters
+# Returns a list with no repeated characters
 def unique_string(n):
     myset = set()
     buffer = ""
@@ -100,4 +106,5 @@ def unique_string(n):
         myset.add(char)
     for item in myset:
         buffer += item
-    return buffer
+    return sorted(buffer)
+# Test using unique_string("Rafsan")
