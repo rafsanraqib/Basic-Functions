@@ -16,3 +16,5 @@ will give 10 + 1 = 11 which is equal to the goal.
 5. unique_string(): This function accepts a string argument and prints the string without any repeats. Utilized sets in python
 
 6. close_far(a,b,c): Expects three ints and returns true if either b or c is within 1 away from a while the other is 10 or greater than a.
+
+* Example tests are included in the code. Uncomment and run
