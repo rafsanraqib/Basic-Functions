@@ -17,4 +17,15 @@ will give 10 + 1 = 11 which is equal to the goal.
 
 6. close_far(a,b,c): Expects three ints and returns true if either b or c is within 1 away from a while the other is 10 or greater than a.
 
+7.unsorted_list_sum(lst, sum): Checks every entry of the list using a loop and checks if there are two same entries adjacent
+and if their sum is equal to the sum in the argument. 
+
+8. sorted_list_sum(lst,sum): Same function as number 7 but this time the list is sorted. 
+
+9. has_repeats(lst): Checks whether the given list has repeated elements. Does not use list, makes use of the data structure
+set in python.
+
+10. first_recuring(lst): Iterates through the list and finds the first recurring character and returns is. Uses python 
+dictionary. 
+
 * Example tests are included in the code. Uncomment and run
