@@ -108,3 +108,53 @@ def unique_string(n):
         buffer += item
     return sorted(buffer)
 # Test using unique_string("Rafsan")
+
+# iterates through an unsorted list to find whether two same entries equals the sum.
+def unsorted_list_sum(lst, sum):
+    leng = len(lst) - 1
+    y = 0
+
+    while y != leng-1:
+        for i in range(leng):
+            if lst[y] == lst[i+1]:
+                val = lst[y] + lst[i+1]
+                if val == sum:
+                    return True
+        y = y + 1
+    return False
+# Test using unsorted_list_sum([1,4,5,3,6],9)
+
+# iterates through a sorted list to find whether two same entries equals the sum.
+def sorted_list_sum(lst, sum):
+    leng = len(lst)-1
+    target_number = sum / 2
+    for i in range(leng):
+        if lst[i] == target_number:
+            if lst[i] + lst[i+1] == sum:
+                return True
+    return False
+# Test using sorted_list_sum([1,2,3,4,4],8)
+
+# Checks whether a given list has repeats in linear time.
+def has_repeats(lst):
+    lst_length = len(lst)
+    my_set     = set(lst)
+    set_length = len(my_set)
+
+    if lst_length > set_length:
+        return True
+    else:
+        return False
+# Test using has_repeats([1,2,3,3,5,4,6,4])
+
+# Returns the first recurring character of a list
+def first_recuring(lst):
+    dict = {}
+    ret_str = "No repeats"
+    for item in lst:
+        if item in dict:
+            return item
+        else:
+            dict[item] = 1
+    return ret_str
+# Test using first_recuring(['A','B','C','A','C'])
